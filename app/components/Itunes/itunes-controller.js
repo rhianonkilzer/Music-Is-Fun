@@ -4,12 +4,27 @@ import ItunesService from "./itunes-service.js";
 
 const itunesService = new ItunesService()
 
-function drawSongs(results) {
-  console.log(results)
-  //YOUR CODING STARTS HERE
+function drawSongs(songs) {
+  console.log(songs)
+  let template = ''
 
+  for (let i = 0; i < songs.length; i++) {
+    const song = songs[i];
+    template += `
+    <div class="col-3 results">
+    <img src="${song.albumArt}"/>
+    <h5>${song.artist}</h5>
+    <h6>${song.title}</h6>
+    <p>${song.collection}</p>
+    <p>$ ${song.price}</p>
+    <audio controls>
+  <source src="${song.preview}">
+  </audio>
+  </div>
+  `
+  }
 
-
+  document.getElementById('songs').innerHTML = template
 }
 
 
@@ -21,12 +36,12 @@ class ItunesController {
     var artist = e.target.artist.value;
     //changes the button to loading while songs load
     // @ts-ignore
-    $('#get-music-button').text('LOADING....');
+    $('#get-music-button').text('Loading...');
     itunesService.getMusicByArtist(artist).then(results => {
       drawSongs(results)
       //changes button back to GET MUSIC once songs are loaded
       // @ts-ignore
-      $('#get-music-button').text('GET MUSIC');
+      $('#get-music-button').text('Get Music');
     })
   }
 
@@ -35,3 +50,4 @@ class ItunesController {
 
 
 export default ItunesController
+

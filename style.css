@@ -1,0 +1,75 @@
+body {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.search-bar {
+height: 24rem;
+}
+
+.custombtn {
+	-moz-box-shadow:inset -1px -3px 3px 0px #675d70;
+	-webkit-box-shadow:inset -1px -3px 3px 0px #675d70;
+	box-shadow:inset -1px -3px 3px 0px #675d70;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cab2de), color-stop(1, #add9f0));
+	background:-moz-linear-gradient(top, #cab2de 5%, #add9f0 100%);
+	background:-webkit-linear-gradient(top, #cab2de 5%, #add9f0 100%);
+	background:-o-linear-gradient(top, #cab2de 5%, #add9f0 100%);
+	background:-ms-linear-gradient(top, #cab2de 5%, #add9f0 100%);
+	background:linear-gradient(to bottom, #cab2de 5%, #add9f0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cab2de', endColorstr='#add9f0',GradientType=0);
+	background-color:#cab2de;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	padding:8px 11px;
+	text-decoration:none;
+	text-shadow:0px 3px 3px #6d6573;
+}
+.custombtn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #add9f0), color-stop(1, #cab2de));
+	background:-moz-linear-gradient(top, #add9f0 5%, #cab2de 100%);
+	background:-webkit-linear-gradient(top, #add9f0 5%, #cab2de 100%);
+	background:-o-linear-gradient(top, #add9f0 5%, #cab2de 100%);
+	background:-ms-linear-gradient(top, #add9f0 5%, #cab2de 100%);
+	background:linear-gradient(to bottom, #add9f0 5%, #cab2de 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#add9f0', endColorstr='#cab2de',GradientType=0);
+	background-color:#add9f0;
+}
+.custombtn:active {
+	position:relative;
+	top:1px;
+}
+
+h2{
+    color: #675d70;
+    font-family: 'Caveat', cursive;
+    font-size: 45px;
+}
+
+    
+h5{
+    color: #675d70;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    
+}
+h6{
+    color: #675d70;
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    
+}
+p{
+    color: #675d70;
+    font-size: 21px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
